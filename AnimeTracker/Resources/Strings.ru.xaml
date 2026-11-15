@@ -1,0 +1,510 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Вкладки -->
+    <sys:String x:Key="Tab_Plan">📋 План</sys:String>
+    <sys:String x:Key="Tab_Rating">⭐ Оценка</sys:String>
+    <sys:String x:Key="Tab_Top">🏆 Топ</sys:String>
+    <sys:String x:Key="Tab_Statistics">📊 Статистика</sys:String>
+    <sys:String x:Key="Tab_Instructions">📘 Инструкция</sys:String>
+    <sys:String x:Key="Tab_Settings">⚙ Настройки</sys:String>
+    <sys:String x:Key="Tab_About">ℹ О программе</sys:String>
+
+    <!-- Кнопки -->
+    <sys:String x:Key="Button_Random">🎲 Рандомайзер</sys:String>
+    <sys:String x:Key="Button_Add">➕ Добавить</sys:String>
+    <sys:String x:Key="Button_Delete">🗑 Удалить</sys:String>
+    <sys:String x:Key="Button_Edit">✏ Редактировать</sys:String>
+    <sys:String x:Key="Button_SaveRating">💾 Сохранить оценку</sys:String>
+    <sys:String x:Key="Button_CancelRating">❌ Отменить оценивание</sys:String>
+    <sys:String x:Key="Button_ReEvaluate">⟲ Переоценить</sys:String>
+    <sys:String x:Key="Button_DeleteFromTop">🗑 Удалить из топа</sys:String>
+    <sys:String x:Key="Button_Save">Сохранить</sys:String>
+    <sys:String x:Key="Button_Cancel">Отмена</sys:String>
+    <sys:String x:Key="Button_TempRating">⭐ Пред. оценка</sys:String>
+    <sys:String x:Key="Button_ExportData">📤 Экспорт данных</sys:String>
+    <sys:String x:Key="Button_ImportData">📥 Импорт данных</sys:String>
+    <sys:String x:Key="Button_ResetData">🗑 Сбросить данные</sys:String>
+    <sys:String x:Key="Button_CriteriaHelp">❓ Критерии</sys:String>
+
+    <!-- Поделиться -->
+    <sys:String x:Key="Button_Share">↩️ Поделиться</sys:String>
+    <sys:String x:Key="ToolTip_Share">Сохранить текущий список в виде картинки</sys:String>
+    <sys:String x:Key="Share_PlanTitle">Мой план просмотра</sys:String>
+    <sys:String x:Key="Share_TopTitle">Мой топ аниме</sys:String>
+    <sys:String x:Key="Share_Total">Всего: {0}</sys:String>
+    <sys:String x:Key="Share_Page">Стр. {0} из {1}</sys:String>
+    <sys:String x:Key="Share_EpisodesShort">эп.</sys:String>
+    <sys:String x:Key="Share_Footer">Создано в Anime Tracker</sys:String>
+    <sys:String x:Key="Share_SaveDialogTitle">Сохранить изображение</sys:String>
+    <sys:String x:Key="Msg_ShareEmpty">Список пуст — делиться нечем.</sys:String>
+    <sys:String x:Key="Msg_ShareError">Не удалось создать изображение: {0}</sys:String>
+
+    <!-- Тултипы для статистики -->
+    <sys:String x:Key="Stats_StatusDistribution_Tooltip">Показывает процентное соотношение аниме по статусам: просмотрено, смотрю, в плане.</sys:String>
+    <sys:String x:Key="Stats_Top5Genres_Tooltip">Показывает 5 самых популярных жанров на основе количества просмотренных аниме.</sys:String>
+    <sys:String x:Key="Stats_Top10Anime_Tooltip">Показывает 10 лучших аниме по вашему рейтингу.</sys:String>
+    <sys:String x:Key="Stats_AvgScoreByGenre_Tooltip">Показывает средний рейтинг для каждого жанра на основе просмотренных аниме.</sys:String>
+    <sys:String x:Key="Stats_TopByYear_Tooltip">Показывает максимальный рейтинг аниме для каждого года.</sys:String>
+
+    <!-- Инструкция для тултипа рекомендаций -->
+    <sys:String x:Key="Stats_Recommendations_Tooltip">Рекомендации формируются на основе ваших любимых жанров (топ-3 жанра из просмотренного). Показываются аниме из плана, которые содержат хотя бы один из этих жанров.</sys:String>
+
+    <!-- Управление опенингами/эндингами -->
+    <sys:String x:Key="Part_Openings">Опенинги</sys:String>
+    <sys:String x:Key="Part_Endings">Эндинги</sys:String>
+    <sys:String x:Key="Part_AddOpening">➕</sys:String>
+    <sys:String x:Key="Part_RemoveOpening">➖</sys:String>
+    <sys:String x:Key="Part_AddEnding">➕</sys:String>
+    <sys:String x:Key="Part_RemoveEnding">➖</sys:String>
+    <sys:String x:Key="Part_Season">Сезон</sys:String>
+    <sys:String x:Key="Part_Movie">Фильм</sys:String>
+    <sys:String x:Key="Part_OVA">OVA</sys:String>
+    <sys:String x:Key="Part_ONA">ONA</sys:String>
+    <sys:String x:Key="Part_Opening">Опенинг</sys:String>
+    <sys:String x:Key="Part_Ending">Эндинг</sys:String>
+    <sys:String x:Key="Part_Count">Количество</sys:String>
+
+    <!-- Поля -->
+    <sys:String x:Key="Label_Title">Название</sys:String>
+    <sys:String x:Key="Label_Genre">Жанр</sys:String>
+    <sys:String x:Key="Label_AddGenre1">Доп. жанр 1</sys:String>
+    <sys:String x:Key="Label_AddGenre2">Доп. жанр 2</sys:String>
+    <sys:String x:Key="Label_Seasons">Сезоны</sys:String>
+    <sys:String x:Key="Label_Movies">Фильмы</sys:String>
+    <sys:String x:Key="Label_OVA">OVA</sys:String>
+    <sys:String x:Key="Label_ONA">ONA</sys:String>
+    <sys:String x:Key="Label_Status">Статус</sys:String>
+    <sys:String x:Key="Label_Description">Описание</sys:String>
+    <sys:String x:Key="Label_VoiceOver">Озвучка</sys:String>
+    <sys:String x:Key="Label_Year">Год</sys:String>
+    <sys:String x:Key="Label_Search">Поиск...</sys:String>
+    <sys:String x:Key="Label_Episodes">Серии</sys:String>
+    <sys:String x:Key="Label_Genres">Жанры</sys:String>
+    <sys:String x:Key="Label_Score">Балл</sys:String>
+    <sys:String x:Key="Label_Rank">№</sys:String>
+    <sys:String x:Key="Label_SeasonsCount">Количество сезонов:</sys:String>
+    <sys:String x:Key="Label_MoviesCount">Количество фильмов:</sys:String>
+    <sys:String x:Key="Label_OVACount">Количество OVA:</sys:String>
+    <sys:String x:Key="Label_ONACount">Количество ONA:</sys:String>
+    <sys:String x:Key="Label_EpisodesPerSeason">серий, год</sys:String>
+    <sys:String x:Key="Label_YearOnly">год</sys:String>
+    <sys:String x:Key="Label_SeasonPrefix">[Сезон</sys:String>
+    <sys:String x:Key="Label_MoviePrefix">[Фильм</sys:String>
+    <sys:String x:Key="Label_OVAPrefix">[OVA</sys:String>
+    <sys:String x:Key="Label_ONAPrefix">[ONA</sys:String>
+
+    <!-- Статусы -->
+    <sys:String x:Key="Status_Plan">План</sys:String>
+    <sys:String x:Key="Status_Watching">Смотрю</sys:String>
+    <sys:String x:Key="Status_Watched">Просмотрено</sys:String>
+
+    <!-- Критерии (названия) -->
+    <sys:String x:Key="Criteria_Story">Сюжет</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters">Главные герои</sys:String>
+    <sys:String x:Key="Criteria_Characters">Второстепенные персонажи</sys:String>
+    <sys:String x:Key="Criteria_Visual">Рисовка и анимация</sys:String>
+    <sys:String x:Key="Criteria_Sound">Звук и музыка</sys:String>
+    <sys:String x:Key="Criteria_Opening">Опенинг (вступительная заставка)</sys:String>
+    <sys:String x:Key="Criteria_Ending">Эндинг (заключительная заставка)</sys:String>
+    <sys:String x:Key="Criteria_Emotions">Эмоциональное воздействие</sys:String>
+    <sys:String x:Key="Criteria_Originality">Оригинальность</sys:String>
+    <sys:String x:Key="Criteria_Finale">Финал (концовка)</sys:String>
+
+    <!-- Описания для критерия "Сюжет" -->
+    <sys:String x:Key="Criteria_Story_1">Сюжет отсутствует, бессвязный набор сцен, логика нарушена.</sys:String>
+    <sys:String x:Key="Criteria_Story_2">Очень слабая история, полная штампов, без интриги.</sys:String>
+    <sys:String x:Key="Criteria_Story_3">Посредственный сюжет, есть идея, но реализация скучная и предсказуемая.</sys:String>
+    <sys:String x:Key="Criteria_Story_4">Неплохой сюжет, но слишком прямолинейный, без неожиданных поворотов.</sys:String>
+    <sys:String x:Key="Criteria_Story_5">Увлекательный сюжет, держит внимание, есть интересные моменты.</sys:String>
+    <sys:String x:Key="Criteria_Story_6">Хорошо построенная история с логичными поворотами и развитием.</sys:String>
+    <sys:String x:Key="Criteria_Story_7">Захватывающий сюжет с неожиданными ходами, трудно оторваться.</sys:String>
+    <sys:String x:Key="Criteria_Story_8">Превосходная история, продуманная до мелочей, интригует до конца.</sys:String>
+    <sys:String x:Key="Criteria_Story_9">Гениальный сюжет, переосмысляет жанр, оставляет сильное впечатление.</sys:String>
+    <sys:String x:Key="Criteria_Story_10">Шедевр повествования, безупречная структура, полное погружение.</sys:String>
+
+    <!-- Описания для "Главные герои" -->
+    <sys:String x:Key="Criteria_MainCharacters_1">Главные герои плоские, без характера, вызывают раздражение.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_2">Персонажи шаблонные, их мотивация неясна.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_3">Герои обычные, не запоминаются, но и не раздражают.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_4">Есть отдельные черты, но раскрыты слабо.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_5">Герои симпатичные, сопереживаешь им, но они не глубоки.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_6">Яркие, с чёткой мотивацией, за ними интересно следить.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_7">Харизматичные, динамично развиваются, их поступки логичны.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_8">Очень живые, с внутренними конфликтами, вызывают сильные эмоции.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_9">Персонажи гениально проработаны, становятся культовыми.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_10">Идеальные герои, воплощение лучших человеческих качеств.</sys:String>
+
+    <!-- Описания для "Второстепенные персонажи" -->
+    <sys:String x:Key="Criteria_Characters_1">Все второстепенные — безликая масса.</sys:String>
+    <sys:String x:Key="Criteria_Characters_2">Шаблонные, нужны только для фона.</sys:String>
+    <sys:String x:Key="Criteria_Characters_3">Есть пара интересных, но остальные не запоминаются.</sys:String>
+    <sys:String x:Key="Criteria_Characters_4">Некоторые персонажи имеют характер, но слабо раскрыты.</sys:String>
+    <sys:String x:Key="Criteria_Characters_5">Обычно дополняют мир, иногда забавны или трогательны.</sys:String>
+    <sys:String x:Key="Criteria_Characters_6">Запоминаются, у каждого есть своя роль и история.</sys:String>
+    <sys:String x:Key="Criteria_Characters_7">Хорошо прописаны, делают мир объёмным и живым.</sys:String>
+    <sys:String x:Key="Criteria_Characters_8">Самобытные, с яркими характерами, вызывают симпатию.</sys:String>
+    <sys:String x:Key="Criteria_Characters_9">Гениально выписаны, каждый оставляет след.</sys:String>
+    <sys:String x:Key="Criteria_Characters_10">Блистательные, идеально дополняют сюжет, забыть невозможно.</sys:String>
+
+    <!-- Описания для "Рисовка и анимация" -->
+    <sys:String x:Key="Criteria_Visual_1">Рисовка ужасная, персонажи и фоны отталкивают.</sys:String>
+    <sys:String x:Key="Criteria_Visual_2">Слабая анимация, много огрехов, неаккуратно.</sys:String>
+    <sys:String x:Key="Criteria_Visual_3">Средний уровень, но есть заметные косяки.</sys:String>
+    <sys:String x:Key="Criteria_Visual_4">Приятный глаз стиль, но анимация не впечатляет.</sys:String>
+    <sys:String x:Key="Criteria_Visual_5">Хороший арт, аккуратная рисовка, но без изюминки.</sys:String>
+    <sys:String x:Key="Criteria_Visual_6">Красиво, детали проработаны, движения плавные.</sys:String>
+    <sys:String x:Key="Criteria_Visual_7">Очень качественно, стиль уникальный, анимация живая.</sys:String>
+    <sys:String x:Key="Criteria_Visual_8">Отличная работа: фоны, дизайн, динамика — всё на высоте.</sys:String>
+    <sys:String x:Key="Criteria_Visual_9">Потрясающая визуализация, почти кинематографичное качество.</sys:String>
+    <sys:String x:Key="Criteria_Visual_10">Шедевр анимации, кадр можно вешать на стену.</sys:String>
+
+    <!-- Описания для "Звук и музыка" -->
+    <sys:String x:Key="Criteria_Sound_1">Звук раздражает, музыка не в тему.</sys:String>
+    <sys:String x:Key="Criteria_Sound_2">Плохое качество, звуки неестественные, выбивают из атмосферы.</sys:String>
+    <sys:String x:Key="Criteria_Sound_3">Средний саундтрек, ничего запоминающегося.</sys:String>
+    <sys:String x:Key="Criteria_Sound_4">Неплохая музыка, но местами не попадает в сцены.</sys:String>
+    <sys:String x:Key="Criteria_Sound_5">Хорошо подобрано, усиливает настроение, но без восторга.</sys:String>
+    <sys:String x:Key="Criteria_Sound_6">Приятная музыка и качественные звуки, погружают.</sys:String>
+    <sys:String x:Key="Criteria_Sound_7">Отличный саунд, запоминающиеся темы, точно в такт.</sys:String>
+    <sys:String x:Key="Criteria_Sound_8">Блистательный саундтрек, звук идеально дополняет картинку.</sys:String>
+    <sys:String x:Key="Criteria_Sound_9">Музыка живёт сама по себе, добавляет глубину, хочется переслушивать.</sys:String>
+    <sys:String x:Key="Criteria_Sound_10">Безупречный звук, половина эмоций — от музыки и шумов.</sys:String>
+
+    <!-- Описания для "Опенинг" -->
+    <sys:String x:Key="Criteria_Opening_1">Скучный, безэмоциональный, хочется пропустить.</sys:String>
+    <sys:String x:Key="Criteria_Opening_2">Слабая заставка, ни музыка, ни визуал не цепляют.</sys:String>
+    <sys:String x:Key="Criteria_Opening_3">Средний опенинг, не плохой, но и не хороший.</sys:String>
+    <sys:String x:Key="Criteria_Opening_4">Есть интересные моменты, но в целом проходной.</sys:String>
+    <sys:String x:Key="Criteria_Opening_5">Хорошая музыка и визуал, поднимает настроение.</sys:String>
+    <sys:String x:Key="Criteria_Opening_6">Красивый, динамичный, хочется пересматривать.</sys:String>
+    <sys:String x:Key="Criteria_Opening_7">Запоминающийся, стильный, отражает суть аниме.</sys:String>
+    <sys:String x:Key="Criteria_Opening_8">Отличный, заряжает энергией, стал бы слушать отдельно.</sys:String>
+    <sys:String x:Key="Criteria_Opening_9">Великолепный, один из лучших, что я видел.</sys:String>
+    <sys:String x:Key="Criteria_Opening_10">Идеальный опенинг — шедевр музыки и анимации.</sys:String>
+
+    <!-- Описания для "Эндинг" -->
+    <sys:String x:Key="Criteria_Ending_1">Скучный, безэмоциональный, хочется пропустить.</sys:String>
+    <sys:String x:Key="Criteria_Ending_2">Слабая заставка, ни музыка, ни визуал не цепляют.</sys:String>
+    <sys:String x:Key="Criteria_Ending_3">Средний эндинг, не плохой, но и не хороший.</sys:String>
+    <sys:String x:Key="Criteria_Ending_4">Есть интересные моменты, но в целом проходной.</sys:String>
+    <sys:String x:Key="Criteria_Ending_5">Хорошая музыка и визуал, поднимает настроение.</sys:String>
+    <sys:String x:Key="Criteria_Ending_6">Красивый, динамичный, хочется пересматривать.</sys:String>
+    <sys:String x:Key="Criteria_Ending_7">Запоминающийся, стильный, отражает суть аниме.</sys:String>
+    <sys:String x:Key="Criteria_Ending_8">Отличный, заряжает энергией, стал бы слушать отдельно.</sys:String>
+    <sys:String x:Key="Criteria_Ending_9">Великолепный, один из лучших, что я видел.</sys:String>
+    <sys:String x:Key="Criteria_Ending_10">Идеальный эндинг — шедевр музыки и анимации.</sys:String>
+
+    <!-- Описания для "Эмоциональное воздействие" -->
+    <sys:String x:Key="Criteria_Emotions_1">Не вызывает никаких эмоций, сухо и безразлично.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_2">Почти не трогает, чувства проходят мимо.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_3">Редкие проблески эмоций, но в основном равнодушно.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_4">Некоторые сцены задевают, но в целом слабо.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_5">Средняя эмоциональность, сопереживаешь, но без сильных потрясений.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_6">Погружает в переживания, вызывает живые чувства.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_7">Захватывает, заставляет радоваться, грустить, волноваться.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_8">Очень сильное впечатление, сцены остаются в памяти.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_9">Пробивает до глубины души, вызывает слёзы или смех.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_10">Невероятная эмоциональная мощь, переворачивает душу.</sys:String>
+
+    <!-- Описания для "Оригинальность" -->
+    <sys:String x:Key="Criteria_Originality_1">Полный клон других аниме, ничего нового.</sys:String>
+    <sys:String x:Key="Criteria_Originality_2">Почти всё заимствовано, новизна близка к нулю.</sys:String>
+    <sys:String x:Key="Criteria_Originality_3">Есть пара свежих идей, но в целом шаблонно.</sys:String>
+    <sys:String x:Key="Criteria_Originality_4">Необычные моменты, но основа банальна.</sys:String>
+    <sys:String x:Key="Criteria_Originality_5">Обычный жанровый подход, но с небольшими находками.</sys:String>
+    <sys:String x:Key="Criteria_Originality_6">Заметно отличается от среднего, есть свой стиль.</sys:String>
+    <sys:String x:Key="Criteria_Originality_7">Оригинально, интригует, неожиданные решения.</sys:String>
+    <sys:String x:Key="Criteria_Originality_8">Уникальный мир, свежий взгляд, переосмысляет жанр.</sys:String>
+    <sys:String x:Key="Criteria_Originality_9">Редкая оригинальность, концепция удивляет и вдохновляет.</sys:String>
+    <sys:String x:Key="Criteria_Originality_10">Гениально, ничего подобного не существовало.</sys:String>
+
+    <!-- Описания для "Финал" -->
+    <sys:String x:Key="Criteria_Finale_1">Концовка ужасна, всё испортила.</sys:String>
+    <sys:String x:Key="Criteria_Finale_2">Очень слабая, смазала всё впечатление.</sys:String>
+    <sys:String x:Key="Criteria_Finale_3">Посредственный финал, не соответствует развитию.</sys:String>
+    <sys:String x:Key="Criteria_Finale_4">Неплохо, но слишком предсказуемо и плоско.</sys:String>
+    <sys:String x:Key="Criteria_Finale_5">Нормальный финал, без восторга, но и не разочаровывает.</sys:String>
+    <sys:String x:Key="Criteria_Finale_6">Хорошо завершает сюжет, все линии закрыты.</sys:String>
+    <sys:String x:Key="Criteria_Finale_7">Отличная концовка, оставляет приятное послевкусие.</sys:String>
+    <sys:String x:Key="Criteria_Finale_8">Сильный финал, запоминается и радует.</sys:String>
+    <sys:String x:Key="Criteria_Finale_9">Великолепный, трудно забыть, вызывает восхищение.</sys:String>
+    <sys:String x:Key="Criteria_Finale_10">Идеальный финал — всё завершено мастерски, оставляет чувство глубокого удовлетворения.</sys:String>
+
+    <!-- Статистика -->
+    <sys:String x:Key="Stats_Watched">Просмотрено</sys:String>
+    <sys:String x:Key="Stats_Planned">В плане</sys:String>
+    <sys:String x:Key="Stats_TotalEpisodes">Всего серий</sys:String>
+    <sys:String x:Key="Stats_TotalTime">Примерное время</sys:String>
+    <sys:String x:Key="Stats_TopGenres">Топ 5 жанров</sys:String>
+    <sys:String x:Key="Stats_TypeDistribution">Распределение по типам</sys:String>
+    <sys:String x:Key="Stats_Top10">Топ-10 аниме</sys:String>
+    <sys:String x:Key="Stats_FavoriteGenre">Любимый жанр</sys:String>
+    <sys:String x:Key="Stats_Longest">Самое длинное</sys:String>
+    <sys:String x:Key="Stats_Shortest">Самое короткое</sys:String>
+    <sys:String x:Key="Statistics_General">Общая статистика</sys:String>
+    <sys:String x:Key="Stats_Top10Genres">Топ-10 жанров</sys:String>
+    <sys:String x:Key="Stats_AvgScoreByGenre">⭐ Средний балл по жанрам</sys:String>
+    <sys:String x:Key="Stats_TopByYear">📅 Топ аниме по годам</sys:String>
+    <sys:String x:Key="Stats_StatusDistribution">📊 Распределение по статусам</sys:String>
+    <sys:String x:Key="Stats_AvgEpisodes">📏 Среднее количество эпизодов в сезоне</sys:String>
+    <sys:String x:Key="Stats_Recommendations">✨ Персональные рекомендации</sys:String>
+    <sys:String x:Key="Stats_WatchedPercent">Просмотрено</sys:String>
+    <sys:String x:Key="Stats_WatchingPercent">Смотрю</sys:String>
+    <sys:String x:Key="Stats_PlannedPercent">План</sys:String>
+
+    <!-- Настройки -->
+    <sys:String x:Key="Settings_Title">Настройки оформления</sys:String>
+    <sys:String x:Key="Settings_Theme">Тема:</sys:String>
+    <sys:String x:Key="Settings_Language">Язык:</sys:String>
+    <sys:String x:Key="Settings_Backup">Управление резервными копиями</sys:String>
+    <sys:String x:Key="Settings_DataManagement">💾 Управление данными</sys:String>
+    <sys:String x:Key="Msg_ExportSuccess">Данные успешно экспортированы.</sys:String>
+    <sys:String x:Key="Msg_ImportSuccess">Данные успешно импортированы.</sys:String>
+    <sys:String x:Key="Msg_ImportInvalidFile">Выбранный файл не является корректным файлом данных Anime Tracker.</sys:String>
+    <sys:String x:Key="Msg_ImportInstructions">Выберите файл сохранения (animeData.json) для восстановления данных.</sys:String>
+    <sys:String x:Key="ResetData_Title">Сброс всех данных</sys:String>
+    <sys:String x:Key="ResetData_Warning">Внимание! Это действие удалит ВСЕ аниме из плана и топа, а также все резервные копии. Восстановить данные будет НЕВОЗМОЖНО, если у вас нет отдельно сохранённого файла.</sys:String>
+    <sys:String x:Key="ResetData_RecommendBackup">Настоятельно рекомендуем сначала создать резервную копию через кнопку «Экспорт данных».</sys:String>
+    <sys:String x:Key="ResetData_ConfirmButton">ОК</sys:String>
+
+    <!-- Инструкция -->
+    <sys:String x:Key="Instr_Welcome">Добро пожаловать в Anime Tracker!</sys:String>
+    <sys:String x:Key="Instr_Subtitle">Ваш личный помощник в мире аниме</sys:String>
+    <sys:String x:Key="Instr_Intro">Ведите личный каталог аниме, оценивайте тайтлы по 10 критериям и стройте собственный топ.</sys:String>
+    <sys:String x:Key="Instr_QuickStart_Title">Быстрый старт</sys:String>
+    <sys:String x:Key="Instr_Step1_Title">Добавьте</sys:String>
+    <sys:String x:Key="Instr_Step1_Text">Нажмите «Добавить» на вкладке «План»</sys:String>
+    <sys:String x:Key="Instr_Step2_Title">Смотрите</sys:String>
+    <sys:String x:Key="Instr_Step2_Text">Поставьте статус «Смотрю»</sys:String>
+    <sys:String x:Key="Instr_Step3_Title">Оцените</sys:String>
+    <sys:String x:Key="Instr_Step3_Text">Статус «Просмотрено» откроет оценку</sys:String>
+    <sys:String x:Key="Instr_Step4_Title">Делитесь</sys:String>
+    <sys:String x:Key="Instr_Step4_Text">Сохраните план или топ картинкой</sys:String>
+    <sys:String x:Key="Instr_Plan_Title">Вкладка «План»</sys:String>
+    <sys:String x:Key="Instr_Plan_1">➕ «Добавить» открывает форму: название, жанры, описание, озвучка, сезоны, фильмы, OVA и ONA.</sys:String>
+    <sys:String x:Key="Instr_Plan_2">🔄 Статус меняется прямо в таблице: «План» → «Смотрю» → «Просмотрено». С последним статусом аниме переходит на вкладку «Оценка».</sys:String>
+    <sys:String x:Key="Instr_Plan_3">⭐ «Пред. оценка» — оцените выбранное аниме заранее или по ходу просмотра. Баллы перенесутся, когда вы отметите «Просмотрено».</sys:String>
+    <sys:String x:Key="Instr_Plan_4">🎲 «Рандомайзер» выберет случайное аниме из плана — выбор можно сузить по жанру.</sys:String>
+    <sys:String x:Key="Instr_Plan_5">✏️ «Редактировать» и «Удалить» работают с выбранной строкой. Найти нужное поможет поиск по названию.</sys:String>
+    <sys:String x:Key="Instr_Rating_Title">Вкладка «Оценка»</sys:String>
+    <sys:String x:Key="Instr_Rating_1">🎯 Каждый сезон и фильм оценивается по 10 критериям: от сюжета и героев до звука и финала. Кнопка «Критерии» подскажет, что значит каждый балл. OVA и ONA только указываются в составе тайтла (они видны в плане, топе и статистике), но не оцениваются.</sys:String>
+    <sys:String x:Key="Instr_Rating_2">🎵 Опенинги и эндинги оцениваются отдельно. Их число подбирается автоматически, но его можно изменить кнопками ➖ и ➕.</sys:String>
+    <sys:String x:Key="Instr_Rating_3">⚖️ Если баллы двух аниме совпали, приложение предложит выбрать, какое из них лучше.</sys:String>
+    <sys:String x:Key="Instr_Rating_4">↩️ «Отменить оценивание» вернёт аниме в план со статусом «Смотрю».</sys:String>
+    <sys:String x:Key="Instr_Top_Title">Вкладка «Топ»</sys:String>
+    <sys:String x:Key="Instr_Top_1">🏆 Ваш личный рейтинг по итоговому баллу с точностью до сотых. Лидеры выделены цветом.</sys:String>
+    <sys:String x:Key="Instr_Top_2">🔁 «Переоценить» возвращает тайтл на вкладку «Оценка», «Редактировать» меняет данные без потери баллов, «Удалить из топа» убирает запись.</sys:String>
+    <sys:String x:Key="Instr_Top_3">🔍 Поиск по названию работает и здесь.</sys:String>
+    <sys:String x:Key="Instr_Share_Title">Кнопка «Поделиться»</sys:String>
+    <sys:String x:Key="Instr_Share_1">🖼 Есть на вкладках «План» и «Топ»: создаёт красивую картинку с логотипом и списком из текущей таблицы (с учётом поиска).</sys:String>
+    <sys:String x:Key="Instr_Share_2">📚 Если аниме много, список автоматически разобьётся на несколько изображений — ничего не обрежется.</sys:String>
+    <sys:String x:Key="Instr_Share_3">💾 Картинка оформлена в цветах вашей темы и на языке приложения. Сохранить можно в PNG или JPEG.</sys:String>
+    <sys:String x:Key="Instr_Stats_Title">Вкладка «Статистика»</sys:String>
+    <sys:String x:Key="Instr_Stats_1">📈 Сводка: сколько аниме просмотрено, запланировано и смотрится сейчас, общее время и количество серий.</sys:String>
+    <sys:String x:Key="Instr_Stats_2">🍩 Диаграммы показывают любимые жанры, топ-10, динамику по годам, самые длинные и короткие тайтлы, а также рекомендации. Данные берутся из вкладки «Топ».</sys:String>
+    <sys:String x:Key="Instr_Settings_Title">Вкладка «Настройки»</sys:String>
+    <sys:String x:Key="Instr_Settings_1">🎨 Выберите одну из 9 тем и язык интерфейса — русский или English. Изменения применяются сразу.</sys:String>
+    <sys:String x:Key="Instr_Settings_2">🛟 Резервные копии создаются автоматически при сохранении (не чаще раза в 30 минут). Хранятся до 5 последних копий за неделю; восстановить или удалить копию можно в «Управлении резервными копиями».</sys:String>
+    <sys:String x:Key="Instr_Settings_3">📤 Экспорт и 📥 импорт переносят файл animeData.json — удобно для переезда на другой компьютер.</sys:String>
+    <sys:String x:Key="Instr_Settings_4">⚠️ «Сбросить данные» безвозвратно удаляет весь каталог. Если не уверены — сначала сделайте экспорт.</sys:String>
+    <sys:String x:Key="Instr_Hotkeys_Title">Горячие клавиши</sys:String>
+    <sys:String x:Key="Instr_Hotkeys_1">Быстрый переход к поиску на вкладках «План» и «Топ».</sys:String>
+    <sys:String x:Key="Instr_Footer">Приятного просмотра! 🍿</sys:String>
+
+    <!-- FAQ -->
+    <sys:String x:Key="FAQ_Title">Часто задаваемые вопросы</sys:String>
+    <sys:String x:Key="FAQ_Q1">Как добавить аниме?</sys:String>
+    <sys:String x:Key="FAQ_A1">Нажмите кнопку «Добавить» на вкладке «План», заполните обязательные поля (отмечены *) и нажмите «Добавить». Если сразу выбрать статус «Просмотрено», аниме перенесётся на вкладку «Оценка».</sys:String>
+    <sys:String x:Key="FAQ_Q2">Почему не отображаются жанры?</sys:String>
+    <sys:String x:Key="FAQ_A2">Убедитесь, что вы выбрали основной жанр из выпадающего списка. Дополнительные жанры опциональны.</sys:String>
+    <sys:String x:Key="FAQ_Q3">Что делать, если два аниме имеют одинаковый балл?</sys:String>
+    <sys:String x:Key="FAQ_A3">При добавлении в топ откроется окно выбора, где вы решите, какое аниме поставить выше. Если конфликты остались, система предложит разрешить их при запуске.</sys:String>
+    <sys:String x:Key="FAQ_Q4">Как восстановить данные из резервной копии?</sys:String>
+    <sys:String x:Key="FAQ_A4">На вкладке «Настройки» нажмите «Управление резервными копиями», выберите нужную копию и нажмите «Восстановить». Также можно импортировать ранее экспортированный файл данных.</sys:String>
+    <sys:String x:Key="FAQ_Q5">Как полностью удалить все данные?</sys:String>
+    <sys:String x:Key="FAQ_A5">На вкладке «Настройки» в разделе «Управление данными» нажмите красную кнопку «Сбросить данные». Подтвердите действие в появившемся окне (потребуется подождать 5 секунд). Перед сбросом рекомендуется создать резервную копию.</sys:String>
+    <sys:String x:Key="FAQ_Q6">Почему вкладка «Топ» может немного подвисать при первом открытии?</sys:String>
+    <sys:String x:Key="FAQ_A6">При первом переключении на вкладку «Топ» происходит расчёт статистики и окончательная сортировка баллов. Это абсолютно нормально и занимает всего долю секунды. При последующих открытиях вкладка будет загружаться мгновенно.</sys:String>
+    <sys:String x:Key="FAQ_Q7">Как оценивать аниме, если в каждом сезоне разное количество опенингов/эндингов?</sys:String>
+    <sys:String x:Key="FAQ_A7">Система автоматически подбирает количество опенингов/эндингов по длине сезона (≤12 эп. – 1, 13–24 эп. – 2, 25–36 эп. – 3 и т.д.). Вы можете вручную добавить или удалить слайдеры с помощью кнопок «+» и «−» рядом с каждым списком. Если в аниме нестандартное количество (например, в каждой серии свой эндинг), рекомендуем посчитать среднее арифметическое всех тем и вписать его в единственный слайдер.</sys:String>
+    <sys:String x:Key="FAQ_Contact">Контакты</sys:String>
+    <sys:String x:Key="FAQ_ContactText">По вопросам и предложениям:</sys:String>
+    <sys:String x:Key="FAQ_LicenseHeader">Лицензионное соглашение (EULA)</sys:String>
+
+    <!-- Жанры (полный алфавитный список) -->
+    <sys:String x:Key="Genre_Angels">Ангелы</sys:String>
+    <sys:String x:Key="Genre_Dystopia">Антиутопия</sys:String>
+    <sys:String x:Key="Genre_Madness">Безумие</sys:String>
+    <sys:String x:Key="Genre_Bishounen">Бисёнен</sys:String>
+    <sys:String x:Key="Genre_Deities">Божества</sys:String>
+    <sys:String x:Key="Genre_MartialArts">Боевые искусства</sys:String>
+    <sys:String x:Key="Genre_Vampire">Вампиры</sys:String>
+    <sys:String x:Key="Genre_VirtualReality">Виртуальная реальность</sys:String>
+    <sys:String x:Key="Genre_Military">Военное</sys:String>
+    <sys:String x:Key="Genre_Thieves">Воры</sys:String>
+    <sys:String x:Key="Genre_Harem">Гарем</sys:String>
+    <sys:String x:Key="Genre_Racing">Гонки</sys:String>
+    <sys:String x:Key="Genre_Gourmet">Гурман</sys:String>
+    <sys:String x:Key="Genre_Demons">Демоны</sys:String>
+    <sys:String x:Key="Genre_Detective">Детектив</sys:String>
+    <sys:String x:Key="Genre_Josei">Дзёсэй</sys:String>
+    <sys:String x:Key="Genre_Dragons">Драконы</sys:String>
+    <sys:String x:Key="Genre_Drama">Драма</sys:String>
+    <sys:String x:Key="Genre_Games">Игры</sys:String>
+    <sys:String x:Key="Genre_Aliens">Инопланетяне</sys:String>
+    <sys:String x:Key="Genre_Isekai">Исекай</sys:String>
+    <sys:String x:Key="Genre_Historical">Исторический</sys:String>
+    <sys:String x:Key="Genre_Cyberpunk">Киберпанк</sys:String>
+    <sys:String x:Key="Genre_Kodomo">Кодомо</sys:String>
+    <sys:String x:Key="Genre_Comedy">Комедия</sys:String>
+    <sys:String x:Key="Genre_Space">Космос</sys:String>
+    <sys:String x:Key="Genre_Lolicon">Лоликон</sys:String>
+    <sys:String x:Key="Genre_LoveTriangle">Любовный треугольник</sys:String>
+    <sys:String x:Key="Genre_Magic">Магия</sys:String>
+    <sys:String x:Key="Genre_MahouShoujo">Махо-сёдзё</sys:String>
+    <sys:String x:Key="Genre_Mafia">Мафия</sys:String>
+    <sys:String x:Key="Genre_Medical">Медицина</sys:String>
+    <sys:String x:Key="Genre_Mecha">Меха</sys:String>
+    <sys:String x:Key="Genre_Mystery">Мистика</sys:String>
+    <sys:String x:Key="Genre_Music">Музыка</sys:String>
+    <sys:String x:Key="Genre_NonlinearPlot">Нелинейный Сюжет</sys:String>
+    <sys:String x:Key="Genre_Ninja">Ниндзя</sys:String>
+    <sys:String x:Key="Genre_ParallelWorld">Параллельный мир</sys:String>
+    <sys:String x:Key="Genre_Parody">Пародия</sys:String>
+    <sys:String x:Key="Genre_Gunfights">Перестрелки</sys:String>
+    <sys:String x:Key="Genre_SliceOfLife">Повседневность</sys:String>
+    <sys:String x:Key="Genre_Police">Полиция</sys:String>
+    <sys:String x:Key="Genre_PostApocalyptic">Пост-апокалипсис</sys:String>
+    <sys:String x:Key="Genre_Adventure">Приключения</sys:String>
+    <sys:String x:Key="Genre_ProxyBattles">Прокси бои</sys:String>
+    <sys:String x:Key="Genre_PsychologicalThriller">Психологический триллер</sys:String>
+    <sys:String x:Key="Genre_Psychological">Психология</sys:String>
+    <sys:String x:Key="Genre_Romance">Романтика</sys:String>
+    <sys:String x:Key="Genre_Samurai">Самураи</sys:String>
+    <sys:String x:Key="Genre_Supernatural">Сверхъестественное</sys:String>
+    <sys:String x:Key="Genre_Shojo">Сёдзё</sys:String>
+    <sys:String x:Key="Genre_ShoujoAi">Сёдзё-ай</sys:String>
+    <sys:String x:Key="Genre_Sports">Спокон</sys:String>
+    <sys:String x:Key="Genre_Sport">Спорт</sys:String>
+    <sys:String x:Key="Genre_SwordFights">Сражения на мечах</sys:String>
+    <sys:String x:Key="Genre_Steampunk">Стимпанк</sys:String>
+    <sys:String x:Key="Genre_Superpowers">Супер способности</sys:String>
+    <sys:String x:Key="Genre_Seinen">Сэйнэн</sys:String>
+    <sys:String x:Key="Genre_Shonen">Сёнэн</sys:String>
+    <sys:String x:Key="Genre_DarkFantasy">Тёмное Фэнтези</sys:String>
+    <sys:String x:Key="Genre_Tragedy">Трагедия</sys:String>
+    <sys:String x:Key="Genre_Thriller">Триллер</sys:String>
+    <sys:String x:Key="Genre_Assassins">Убийцы</sys:String>
+    <sys:String x:Key="Genre_Horror">Ужасы</sys:String>
+    <sys:String x:Key="Genre_SciFi">Фантастика</sys:String>
+    <sys:String x:Key="Genre_Fantasy">Фэнтези</sys:String>
+    <sys:String x:Key="Genre_School">Школа</sys:String>
+    <sys:String x:Key="Genre_Action">Экшен</sys:String>
+    <sys:String x:Key="Genre_Elves">Эльфы</sys:String>
+    <sys:String x:Key="Genre_Erotica">Эротика</sys:String>
+    <sys:String x:Key="Genre_Ecchi">Этти</sys:String>
+    <sys:String x:Key="Genre_Yuri">Юри</sys:String>
+    <sys:String x:Key="Genre_Yaoi">Яой</sys:String>
+
+    <!-- Темы -->
+    <sys:String x:Key="Theme_Default">По умолчанию</sys:String>
+    <sys:String x:Key="Theme_NightEmerald">Ночной изумруд</sys:String>
+    <sys:String x:Key="Theme_SunsetBlaze">Закатный огонь</sys:String>
+    <sys:String x:Key="Theme_IcySapphire">Ледяной сапфир</sys:String>
+    <sys:String x:Key="Theme_PinkDawn">Розовый рассвет</sys:String>
+    <sys:String x:Key="Theme_CarbonCharcoal">Карбоновый уголь</sys:String>
+    <sys:String x:Key="Theme_AutumnAmber">Осенний янтарь</sys:String>
+    <sys:String x:Key="Theme_LavenderDream">Лавандовая мечта</sys:String>
+    <sys:String x:Key="Theme_MidnightGalaxy">Полуночная галактика</sys:String>
+
+    <!-- Заголовки страниц -->
+    <sys:String x:Key="Plan_PageTitle">📋 Ваш план</sys:String>
+    <sys:String x:Key="Top_PageTitle">🏆 Лидеры просмотра</sys:String>
+
+    <!-- Заголовки статистики -->
+    <sys:String x:Key="Stats_DistributionTitle">Распределение по статусам</sys:String>
+    <sys:String x:Key="Stats_Top5GenresTitle">Топ-5 жанров</sys:String>
+    <sys:String x:Key="Stats_TopByYearTitle">📅 Топ-балл по годам</sys:String>
+
+    <!-- Поиск -->
+    <sys:String x:Key="Search_Placeholder">🔍  Поиск аниме...</sys:String>
+
+    <!-- Оценка -->
+    <sys:String x:Key="Rating_NoParts">Нет частей для оценки</sys:String>
+
+    <!-- Прочее -->
+    <sys:String x:Key="Rating_Evaluating">Оцениваем:</sys:String>
+    <sys:String x:Key="Rating_VoiceOver">Озвучка:</sys:String>
+    <sys:String x:Key="Msg_Conflict">Оба аниме имеют одинаковый балл. Выберите, какое поставить выше:</sys:String>
+    <sys:String x:Key="Msg_SelectHigher">▲ Выбрать это аниме выше</sys:String>
+    <sys:String x:Key="Plan_TodaysChoice">Сегодняшний выбор</sys:String>
+    <sys:String x:Key="Plan_PressRandom">Нажми на рандомайзер</sys:String>
+    <sys:String x:Key="Backup_Title">Управление резервными копиями</sys:String>
+    <sys:String x:Key="Backup_Available">Доступные резервные копии</sys:String>
+    <sys:String x:Key="Backup_Restore">Восстановить</sys:String>
+    <sys:String x:Key="Backup_Delete">Удалить</sys:String>
+    <sys:String x:Key="Backup_Close">Закрыть</sys:String>
+    <sys:String x:Key="Backup_Size">Размер:</sys:String>
+    <sys:String x:Key="Backup_CreateFailed">Не удалось создать резервную копию: {0}</sys:String>
+    <sys:String x:Key="Backup_NotFound">Файл резервной копии не найден.</sys:String>
+    <sys:String x:Key="Backup_RestoreFailed">Не удалось восстановить данные: {0}</sys:String>
+    <sys:String x:Key="AddAnime_Title">Добавление аниме</sys:String>
+    <sys:String x:Key="Conflict_Title">Конфликт оценок</sys:String>
+    <sys:String x:Key="ToolTip_ExactScore">Точный балл:</sys:String>
+    <sys:String x:Key="CriteriaHelp_Title">Критерии оценивания</sys:String>
+    <sys:String x:Key="CriteriaHelp_Header">Критерии оценивания</sys:String>
+    <sys:String x:Key="Stats_Hint">💡 Наведите на заголовок, чтобы узнать подробности</sys:String>
+
+    <!-- Окно предварительной оценки -->
+    <sys:String x:Key="TempRating_Title">Предварительная оценка</sys:String>
+    <sys:String x:Key="TempRating_Info">⭐ Это окно предварительной оценки.&#x0a;Выставленные здесь баллы не влияют на итоговый рейтинг и могут быть изменены в любой момент. При переводе аниме в статус «Просмотрено» эти оценки будут перенесены на вкладку «Оценка».</sys:String>
+
+    <!-- EditAnimeWindow / AddAnimeWindow -->
+    <sys:String x:Key="EditAnime_Title">Редактирование аниме</sys:String>
+    <sys:String x:Key="EditAnime_BasicInfo">📝 Основная информация</sys:String>
+    <sys:String x:Key="EditAnime_AdditionalGenres">Дополнительные жанры</sys:String>
+    <sys:String x:Key="EditAnime_AddGenreButton">➕ Добавить жанр</sys:String>
+    <sys:String x:Key="EditAnime_AdditionalGenrePrefix">Доп. жанр</sys:String>
+    <sys:String x:Key="EditAnime_EpisodesStatus">🎬 Эпизоды и статус</sys:String>
+    <sys:String x:Key="EditAnime_Details">📋 Детали по сезонам/фильмам/OVA/ONA</sys:String>
+    <sys:String x:Key="EditAnime_DescriptionAndVoice">📄 Описание и озвучка</sys:String>
+
+    <sys:String x:Key="AddAnime_BasicInfo">📝 Основная информация</sys:String>
+    <sys:String x:Key="AddAnime_AdditionalGenres">Дополнительные жанры</sys:String>
+    <sys:String x:Key="AddAnime_AddGenreButton">➕ Добавить жанр</sys:String>
+    <sys:String x:Key="AddAnime_AdditionalGenrePrefix">Доп. жанр</sys:String>
+    <sys:String x:Key="AddAnime_EpisodesStatus">🎬 Эпизоды и статус</sys:String>
+    <sys:String x:Key="AddAnime_Details">📋 Детали по сезонам/фильмам/OVA/ONA</sys:String>
+    <sys:String x:Key="AddAnime_DescriptionAndVoice">📄 Описание и озвучка</sys:String>
+
+    <!-- Сообщения -->
+    <sys:String x:Key="Msg_RequiredFields">Заполните все обязательные поля (отмечены звёздочкой).</sys:String>
+    <sys:String x:Key="Msg_AddAtLeastOne">Добавьте хотя бы один сезон, фильм, OVA или ONA.</sys:String>
+    <sys:String x:Key="Msg_CorrectYears">Укажите корректные годы и количество серий для всех сезонов/фильмов/OVA/ONA.</sys:String>
+    <sys:String x:Key="Msg_DataRestored">Данные успешно восстановлены.</sys:String>
+    <sys:String x:Key="Msg_DataResetSuccess">Все данные были сброшены.</sys:String>
+    <sys:String x:Key="Msg_DeleteAnimeConfirmation">Удалить аниме '{0}' из топа?</sys:String>
+    <sys:String x:Key="Msg_DeletePlanAnimeConfirmation">Удалить аниме '{0}' из плана?</sys:String>
+    <sys:String x:Key="Msg_ConfirmDeleteTitle">Подтверждение</sys:String>
+    <sys:String x:Key="Msg_DataLoadError">Ошибка при загрузке данных: {0}</sys:String>
+    <sys:String x:Key="Msg_ErrorTitle">Ошибка</sys:String>
+
+    <!-- About page -->
+    <sys:String x:Key="About_Title">О программе</sys:String>
+    <sys:String x:Key="About_AppDescription">Anime Tracker — это десктопное приложение для ведения личного каталога аниме с оценкой по 10 критериям и построением собственного топ-листа.</sys:String>
+    <sys:String x:Key="About_AppStory">Всё началось с идеи друга оценивать просмотренные аниме. Мы прошли путь от блокнотов до Excel с макросами, но функционала не хватало. Так я решил создать полноценное приложение, которое объединило бы гибкую оценку, удобную статистику и красивый интерфейс.</sys:String>
+    <sys:String x:Key="About_Developer">Разработчик</sys:String>
+    <sys:String x:Key="About_DeveloperName">ThePhantomRU</sys:String>
+    <sys:String x:Key="About_GitHub">GitHub</sys:String>
+    <sys:String x:Key="About_GitHubLink">https://github.com/ThePhantomRU</sys:String>
+
+    <!-- Тултипы для вкладок -->
+    <sys:String x:Key="ToolTip_PlanTab">Список запланированных аниме</sys:String>
+    <sys:String x:Key="ToolTip_RatingTab">Оценка аниме</sys:String>
+    <sys:String x:Key="ToolTip_TopTab">Ваш личный рейтинг</sys:String>
+    <sys:String x:Key="ToolTip_StatsTab">Статистика просмотров</sys:String>
+    <sys:String x:Key="ToolTip_InstructionsTab">Руководство по использованию</sys:String>
+    <sys:String x:Key="ToolTip_SettingsTab">Настройки приложения</sys:String>
+    <sys:String x:Key="ToolTip_AboutTab">Информация о программе</sys:String>
+</ResourceDictionary>

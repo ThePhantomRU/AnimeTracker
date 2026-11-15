@@ -1,0 +1,67 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UseWPF>true</UseWPF>
+		<Version>1.0.0</Version>
+		<ApplicationIcon>Resources\app.ico</ApplicationIcon>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Resources\Strings.en.xaml.cs" />
+		<Compile Remove="Resources\Strings.ru.xaml.cs" />
+		<Compile Remove="Themes\DefaultTheme.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="LICENSE_RU.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<None Update="LICENSE_EN.txt">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+		<Content Include="Resources\app.ico">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Resources\Fonts\Montserrat-VariableFont_wght.ttf" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="LiveCharts.Wpf" Version="0.9.7" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="Themes\DefaultTheme.xaml" />
+		<Resource Include="Themes\NightEmeraldTheme.xaml" />
+		<Resource Include="Themes\SunsetBlazeTheme.xaml" />
+		<Resource Include="Themes\IcySapphireTheme.xaml" />
+		<Resource Include="Themes\PinkDawnTheme.xaml" />
+		<Resource Include="Themes\CarbonCharcoalTheme.xaml" />
+		<Resource Include="Themes\AutumnAmberTheme.xaml" />
+		<Resource Include="Themes\LavenderDreamTheme.xaml" />
+		<Resource Include="Themes\MidnightGalaxyTheme.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\Settings.Designer.cs">
+			<DesignTimeSharedInput>True</DesignTimeSharedInput>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Settings.settings</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Update="Properties\Settings.settings">
+			<Generator>SettingsSingleFileGenerator</Generator>
+			<LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		</None>
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,512 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <!-- Tabs -->
+    <sys:String x:Key="Tab_Plan">📋 Plan</sys:String>
+    <sys:String x:Key="Tab_Rating">⭐ Rating</sys:String>
+    <sys:String x:Key="Tab_Top">🏆 Top</sys:String>
+    <sys:String x:Key="Tab_Statistics">📊 Statistics</sys:String>
+    <sys:String x:Key="Tab_Instructions">📘 Instructions</sys:String>
+    <sys:String x:Key="Tab_Settings">⚙ Settings</sys:String>
+    <sys:String x:Key="Tab_About">ℹ About</sys:String>
+
+    <!-- Buttons -->
+    <sys:String x:Key="Button_Random">🎲 Random</sys:String>
+    <sys:String x:Key="Button_Add">➕ Add</sys:String>
+    <sys:String x:Key="Button_Delete">🗑 Delete</sys:String>
+    <sys:String x:Key="Button_Edit">✏ Edit</sys:String>
+    <sys:String x:Key="Button_SaveRating">💾 Save Rating</sys:String>
+    <sys:String x:Key="Button_CancelRating">❌ Cancel Rating</sys:String>
+    <sys:String x:Key="Button_ReEvaluate">⟲ Re-evaluate</sys:String>
+    <sys:String x:Key="Button_DeleteFromTop">🗑 Delete from Top</sys:String>
+    <sys:String x:Key="Button_Save">Save</sys:String>
+    <sys:String x:Key="Button_Cancel">Cancel</sys:String>
+    <sys:String x:Key="Button_TempRating">⭐ Temp Rating</sys:String>
+    <sys:String x:Key="Button_ExportData">📤 Export Data</sys:String>
+    <sys:String x:Key="Button_ImportData">📥 Import Data</sys:String>
+    <sys:String x:Key="Button_ResetData">🗑 Reset Data</sys:String>
+    <sys:String x:Key="Button_CriteriaHelp">❓ Criteria</sys:String>
+
+    <!-- Share -->
+    <sys:String x:Key="Button_Share">↩️ Share</sys:String>
+    <sys:String x:Key="ToolTip_Share">Save the current list as an image</sys:String>
+    <sys:String x:Key="Share_PlanTitle">My watch plan</sys:String>
+    <sys:String x:Key="Share_TopTitle">My anime top</sys:String>
+    <sys:String x:Key="Share_Total">Total: {0}</sys:String>
+    <sys:String x:Key="Share_Page">Page {0} of {1}</sys:String>
+    <sys:String x:Key="Share_EpisodesShort">ep.</sys:String>
+    <sys:String x:Key="Share_Footer">Made with Anime Tracker</sys:String>
+    <sys:String x:Key="Share_SaveDialogTitle">Save image</sys:String>
+    <sys:String x:Key="Msg_ShareEmpty">The list is empty — nothing to share.</sys:String>
+    <sys:String x:Key="Msg_ShareError">Failed to create the image: {0}</sys:String>
+
+    <!-- Stats tooltips -->
+    <sys:String x:Key="Stats_StatusDistribution_Tooltip">Shows the percentage distribution of anime by status: Watched, Watching, Planned.</sys:String>
+    <sys:String x:Key="Stats_Top5Genres_Tooltip">Shows the 5 most popular genres based on the number of watched anime.</sys:String>
+    <sys:String x:Key="Stats_Top10Anime_Tooltip">Shows the top 10 anime according to your rating.</sys:String>
+    <sys:String x:Key="Stats_AvgScoreByGenre_Tooltip">Shows the average rating for each genre based on watched anime.</sys:String>
+    <sys:String x:Key="Stats_TopByYear_Tooltip">Shows the maximum anime rating for each year.</sys:String>
+
+    <!-- Tooltip for recommendations -->
+    <sys:String x:Key="Stats_Recommendations_Tooltip">Recommendations are based on your favorite genres (top 3 genres from watched anime). Anime from the plan that contain at least one of these genres are shown.</sys:String>
+
+    <!-- Opening/Ending management -->
+    <sys:String x:Key="Part_Openings">Openings</sys:String>
+    <sys:String x:Key="Part_Endings">Endings</sys:String>
+    <sys:String x:Key="Part_AddOpening">➕</sys:String>
+    <sys:String x:Key="Part_RemoveOpening">➖</sys:String>
+    <sys:String x:Key="Part_AddEnding">➕</sys:String>
+    <sys:String x:Key="Part_RemoveEnding">➖</sys:String>
+    <sys:String x:Key="Part_Season">Season</sys:String>
+    <sys:String x:Key="Part_Movie">Movie</sys:String>
+    <sys:String x:Key="Part_OVA">OVA</sys:String>
+    <sys:String x:Key="Part_ONA">ONA</sys:String>
+    <sys:String x:Key="Part_Opening">Opening</sys:String>
+    <sys:String x:Key="Part_Ending">Ending</sys:String>
+    <sys:String x:Key="Part_Count">Count</sys:String>
+
+    <!-- Labels -->
+    <sys:String x:Key="Label_Title">Title</sys:String>
+    <sys:String x:Key="Label_Genre">Genre</sys:String>
+    <sys:String x:Key="Label_AddGenre1">Add. genre 1</sys:String>
+    <sys:String x:Key="Label_AddGenre2">Add. genre 2</sys:String>
+    <sys:String x:Key="Label_Seasons">Seasons</sys:String>
+    <sys:String x:Key="Label_Movies">Movies</sys:String>
+    <sys:String x:Key="Label_OVA">OVA</sys:String>
+    <sys:String x:Key="Label_ONA">ONA</sys:String>
+    <sys:String x:Key="Label_Status">Status</sys:String>
+    <sys:String x:Key="Label_Description">Description</sys:String>
+    <sys:String x:Key="Label_VoiceOver">Voice over</sys:String>
+    <sys:String x:Key="Label_Year">Year</sys:String>
+    <sys:String x:Key="Label_Search">Search...</sys:String>
+    <sys:String x:Key="Label_Episodes">Episodes</sys:String>
+    <sys:String x:Key="Label_Genres">Genres</sys:String>
+    <sys:String x:Key="Label_Score">Score</sys:String>
+    <sys:String x:Key="Label_Rank">№</sys:String>
+    <sys:String x:Key="Label_SeasonsCount">Number of seasons:</sys:String>
+    <sys:String x:Key="Label_MoviesCount">Number of movies:</sys:String>
+    <sys:String x:Key="Label_OVACount">Number of OVA:</sys:String>
+    <sys:String x:Key="Label_ONACount">Number of ONA:</sys:String>
+    <sys:String x:Key="Label_EpisodesPerSeason">episodes, year</sys:String>
+    <sys:String x:Key="Label_YearOnly">year</sys:String>
+    <sys:String x:Key="Label_SeasonPrefix">[Season</sys:String>
+    <sys:String x:Key="Label_MoviePrefix">[Movie</sys:String>
+    <sys:String x:Key="Label_OVAPrefix">[OVA</sys:String>
+    <sys:String x:Key="Label_ONAPrefix">[ONA</sys:String>
+
+    <!-- Statuses -->
+    <sys:String x:Key="Status_Plan">Plan</sys:String>
+    <sys:String x:Key="Status_Watching">Watching</sys:String>
+    <sys:String x:Key="Status_Watched">Watched</sys:String>
+
+    <!-- Criteria (names) -->
+    <sys:String x:Key="Criteria_Story">Story</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters">Main characters</sys:String>
+    <sys:String x:Key="Criteria_Characters">Supporting characters</sys:String>
+    <sys:String x:Key="Criteria_Visual">Art &amp; Animation</sys:String>
+    <sys:String x:Key="Criteria_Sound">Sound &amp; Music</sys:String>
+    <sys:String x:Key="Criteria_Opening">Opening Theme</sys:String>
+    <sys:String x:Key="Criteria_Ending">Ending Theme</sys:String>
+    <sys:String x:Key="Criteria_Emotions">Emotional Impact</sys:String>
+    <sys:String x:Key="Criteria_Originality">Originality</sys:String>
+    <sys:String x:Key="Criteria_Finale">Finale</sys:String>
+
+    <!-- Descriptions for "Story" -->
+    <sys:String x:Key="Criteria_Story_1">No coherent story, random scenes without logic.</sys:String>
+    <sys:String x:Key="Criteria_Story_2">Very weak plot, full of clichés, no suspense.</sys:String>
+    <sys:String x:Key="Criteria_Story_3">Mediocre story, has an idea but boring and predictable execution.</sys:String>
+    <sys:String x:Key="Criteria_Story_4">Decent plot, but too straightforward, lacks surprises.</sys:String>
+    <sys:String x:Key="Criteria_Story_5">Engaging story, holds attention, has interesting moments.</sys:String>
+    <sys:String x:Key="Criteria_Story_6">Well-constructed narrative with logical twists and development.</sys:String>
+    <sys:String x:Key="Criteria_Story_7">Captivating plot with unexpected turns, hard to put down.</sys:String>
+    <sys:String x:Key="Criteria_Story_8">Excellent story, meticulously thought out, intriguing till the end.</sys:String>
+    <sys:String x:Key="Criteria_Story_9">Brilliant, genre‑redefining, leaves a lasting impression.</sys:String>
+    <sys:String x:Key="Criteria_Story_10">Masterpiece of storytelling, flawless structure, complete immersion.</sys:String>
+
+    <!-- Descriptions for "Main characters" -->
+    <sys:String x:Key="Criteria_MainCharacters_1">Main characters are flat, lack personality, irritating.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_2">Stereotypical characters, unclear motivation.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_3">Average characters, not memorable, but not annoying.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_4">Some traits, but poorly developed.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_5">Likeable characters, you sympathize, but they lack depth.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_6">Vivid, with clear motivation, interesting to follow.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_7">Charismatic, dynamically evolve, actions are logical.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_8">Very lively, with inner conflicts, evoke strong emotions.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_9">Brilliantly crafted, become iconic.</sys:String>
+    <sys:String x:Key="Criteria_MainCharacters_10">Ideal heroes, embody the best human qualities.</sys:String>
+
+    <!-- Descriptions for "Supporting characters" -->
+    <sys:String x:Key="Criteria_Characters_1">All supporting characters are faceless masses.</sys:String>
+    <sys:String x:Key="Criteria_Characters_2">Stereotypical, only there for background.</sys:String>
+    <sys:String x:Key="Criteria_Characters_3">A few interesting ones, but the rest are forgettable.</sys:String>
+    <sys:String x:Key="Criteria_Characters_4">Some have personality, but weakly developed.</sys:String>
+    <sys:String x:Key="Criteria_Characters_5">Usually complement the world, sometimes amusing or touching.</sys:String>
+    <sys:String x:Key="Criteria_Characters_6">Memorable, each has a role and background.</sys:String>
+    <sys:String x:Key="Criteria_Characters_7">Well written, make the world feel full and alive.</sys:String>
+    <sys:String x:Key="Criteria_Characters_8">Distinctive, with strong personalities, likable.</sys:String>
+    <sys:String x:Key="Criteria_Characters_9">Genius writing, each leaves a mark.</sys:String>
+    <sys:String x:Key="Criteria_Characters_10">Brilliant, perfectly complement the story, unforgettable.</sys:String>
+
+    <!-- Descriptions for "Art & Animation" -->
+    <sys:String x:Key="Criteria_Visual_1">Terrible art, characters and backgrounds repel.</sys:String>
+    <sys:String x:Key="Criteria_Visual_2">Poor animation, many errors, sloppy.</sys:String>
+    <sys:String x:Key="Criteria_Visual_3">Average quality, but noticeable flaws.</sys:String>
+    <sys:String x:Key="Criteria_Visual_4">Pleasant style, but animation doesn't impress.</sys:String>
+    <sys:String x:Key="Criteria_Visual_5">Good art, neat drawing, but no zest.</sys:String>
+    <sys:String x:Key="Criteria_Visual_6">Beautiful, detailed, smooth motion.</sys:String>
+    <sys:String x:Key="Criteria_Visual_7">High quality, unique style, animation feels alive.</sys:String>
+    <sys:String x:Key="Criteria_Visual_8">Excellent work: backgrounds, design, dynamics all top.</sys:String>
+    <sys:String x:Key="Criteria_Visual_9">Stunning visuals, almost cinematic quality.</sys:String>
+    <sys:String x:Key="Criteria_Visual_10">Masterpiece of animation, every frame is a work of art.</sys:String>
+
+    <!-- Descriptions for "Sound & Music" -->
+    <sys:String x:Key="Criteria_Sound_1">Sound is annoying, music doesn't fit.</sys:String>
+    <sys:String x:Key="Criteria_Sound_2">Poor quality, unnatural sounds break immersion.</sys:String>
+    <sys:String x:Key="Criteria_Sound_3">Average soundtrack, nothing memorable.</sys:String>
+    <sys:String x:Key="Criteria_Sound_4">Decent music, but sometimes mismatched with scenes.</sys:String>
+    <sys:String x:Key="Criteria_Sound_5">Good soundtrack, enhances mood, but not outstanding.</sys:String>
+    <sys:String x:Key="Criteria_Sound_6">Pleasant music and quality sound effects, immerse you.</sys:String>
+    <sys:String x:Key="Criteria_Sound_7">Great soundtrack, memorable themes, perfectly timed.</sys:String>
+    <sys:String x:Key="Criteria_Sound_8">Brilliant soundtrack, sound perfectly complements visuals.</sys:String>
+    <sys:String x:Key="Criteria_Sound_9">Music lives on its own, adds depth, you want to listen again.</sys:String>
+    <sys:String x:Key="Criteria_Sound_10">Flawless sound, half the emotions come from music and effects.</sys:String>
+
+    <!-- Descriptions for "Opening Theme" -->
+    <sys:String x:Key="Criteria_Opening_1">Boring, emotionless, you want to skip.</sys:String>
+    <sys:String x:Key="Criteria_Opening_2">Weak OP, neither music nor visuals grab you.</sys:String>
+    <sys:String x:Key="Criteria_Opening_3">Average opening, not bad but not good.</sys:String>
+    <sys:String x:Key="Criteria_Opening_4">Some interesting elements, but overall forgettable.</sys:String>
+    <sys:String x:Key="Criteria_Opening_5">Good music and visuals, lifts your mood.</sys:String>
+    <sys:String x:Key="Criteria_Opening_6">Beautiful, dynamic, you want to rewatch.</sys:String>
+    <sys:String x:Key="Criteria_Opening_7">Memorable, stylish, reflects the anime's essence.</sys:String>
+    <sys:String x:Key="Criteria_Opening_8">Excellent, energizes, you would listen separately.</sys:String>
+    <sys:String x:Key="Criteria_Opening_9">Magnificent, one of the best I've seen.</sys:String>
+    <sys:String x:Key="Criteria_Opening_10">Perfect opening – a masterpiece of music and animation.</sys:String>
+
+    <!-- Descriptions for "Ending Theme" -->
+    <sys:String x:Key="Criteria_Ending_1">Boring, emotionless, you want to skip.</sys:String>
+    <sys:String x:Key="Criteria_Ending_2">Weak ED, neither music nor visuals grab you.</sys:String>
+    <sys:String x:Key="Criteria_Ending_3">Average ending, not bad but not good.</sys:String>
+    <sys:String x:Key="Criteria_Ending_4">Some interesting elements, but overall forgettable.</sys:String>
+    <sys:String x:Key="Criteria_Ending_5">Good music and visuals, lifts your mood.</sys:String>
+    <sys:String x:Key="Criteria_Ending_6">Beautiful, dynamic, you want to rewatch.</sys:String>
+    <sys:String x:Key="Criteria_Ending_7">Memorable, stylish, reflects the anime's essence.</sys:String>
+    <sys:String x:Key="Criteria_Ending_8">Excellent, energizes, you would listen separately.</sys:String>
+    <sys:String x:Key="Criteria_Ending_9">Magnificent, one of the best I've seen.</sys:String>
+    <sys:String x:Key="Criteria_Ending_10">Perfect ending – a masterpiece of music and animation.</sys:String>
+
+    <!-- Descriptions for "Emotional Impact" -->
+    <sys:String x:Key="Criteria_Emotions_1">Evokes no emotions, dry and indifferent.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_2">Almost doesn't touch you, feelings pass by.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_3">Rare glimpses of emotion, mostly indifferent.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_4">Some scenes affect you, but overall weak.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_5">Average emotionality, you sympathize, but no strong shakes.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_6">Draws you into experiences, evokes genuine feelings.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_7">Captivates, makes you happy, sad, worried.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_8">Very strong impression, scenes stay with you.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_9">Strikes deep, brings tears or laughter.</sys:String>
+    <sys:String x:Key="Criteria_Emotions_10">Incredible emotional power, turns your soul.</sys:String>
+
+    <!-- Descriptions for "Originality" -->
+    <sys:String x:Key="Criteria_Originality_1">Complete copy of other anime, nothing new.</sys:String>
+    <sys:String x:Key="Criteria_Originality_2">Almost everything borrowed, novelty near zero.</sys:String>
+    <sys:String x:Key="Criteria_Originality_3">A few fresh ideas, but mostly formulaic.</sys:String>
+    <sys:String x:Key="Criteria_Originality_4">Unusual moments, but the base is cliché.</sys:String>
+    <sys:String x:Key="Criteria_Originality_5">Typical genre approach, but with small finds.</sys:String>
+    <sys:String x:Key="Criteria_Originality_6">Noticeably different from the average, has its own style.</sys:String>
+    <sys:String x:Key="Criteria_Originality_7">Original, intriguing, unexpected solutions.</sys:String>
+    <sys:String x:Key="Criteria_Originality_8">Unique world, fresh perspective, rethinks the genre.</sys:String>
+    <sys:String x:Key="Criteria_Originality_9">Rare originality, concept surprises and inspires.</sys:String>
+    <sys:String x:Key="Criteria_Originality_10">Genius, nothing like it has ever existed.</sys:String>
+
+    <!-- Descriptions for "Finale" -->
+    <sys:String x:Key="Criteria_Finale_1">Terrible ending, ruined everything.</sys:String>
+    <sys:String x:Key="Criteria_Finale_2">Very weak, blunted the whole impression.</sys:String>
+    <sys:String x:Key="Criteria_Finale_3">Mediocre finale, doesn't match the development.</sys:String>
+    <sys:String x:Key="Criteria_Finale_4">Decent, but too predictable and flat.</sys:String>
+    <sys:String x:Key="Criteria_Finale_5">Average ending, no delight, but no disappointment.</sys:String>
+    <sys:String x:Key="Criteria_Finale_6">Good conclusion, all storylines resolved.</sys:String>
+    <sys:String x:Key="Criteria_Finale_7">Great ending, leaves a pleasant aftertaste.</sys:String>
+    <sys:String x:Key="Criteria_Finale_8">Strong finale, memorable and satisfying.</sys:String>
+    <sys:String x:Key="Criteria_Finale_9">Magnificent, hard to forget, evokes admiration.</sys:String>
+    <sys:String x:Key="Criteria_Finale_10">Perfect finale — everything is masterfully concluded, leaving a deep sense of satisfaction.</sys:String>
+
+    <!-- Statistics -->
+    <sys:String x:Key="Stats_Watched">Watched</sys:String>
+    <sys:String x:Key="Stats_Planned">Planned</sys:String>
+    <sys:String x:Key="Stats_TotalEpisodes">Total episodes</sys:String>
+    <sys:String x:Key="Stats_TotalTime">Approx. time</sys:String>
+    <sys:String x:Key="Stats_TopGenres">Top 5 genres</sys:String>
+    <sys:String x:Key="Stats_TypeDistribution">Type distribution</sys:String>
+    <sys:String x:Key="Stats_Top10">Top 10 anime</sys:String>
+    <sys:String x:Key="Stats_FavoriteGenre">Favorite genre</sys:String>
+    <sys:String x:Key="Stats_Longest">Longest</sys:String>
+    <sys:String x:Key="Stats_Shortest">Shortest</sys:String>
+    <sys:String x:Key="Statistics_General">General statistics</sys:String>
+    <sys:String x:Key="Stats_Top10Genres">Top 10 Genres</sys:String>
+    <sys:String x:Key="Stats_AvgScoreByGenre">⭐ Average Score by Genre</sys:String>
+    <sys:String x:Key="Stats_TopByYear">📅 Top Anime by Year</sys:String>
+    <sys:String x:Key="Stats_StatusDistribution">📊 Status Distribution</sys:String>
+    <sys:String x:Key="Stats_AvgEpisodes">📏 Average Episodes per Season</sys:String>
+    <sys:String x:Key="Stats_Recommendations">✨ Personal Recommendations</sys:String>
+    <sys:String x:Key="Stats_WatchedPercent">Watched</sys:String>
+    <sys:String x:Key="Stats_WatchingPercent">Watching</sys:String>
+    <sys:String x:Key="Stats_PlannedPercent">Planned</sys:String>
+
+    <!-- Settings -->
+    <sys:String x:Key="Settings_Title">Appearance settings</sys:String>
+    <sys:String x:Key="Settings_Theme">Theme:</sys:String>
+    <sys:String x:Key="Settings_Language">Language:</sys:String>
+    <sys:String x:Key="Settings_Backup">Manage backups</sys:String>
+    <sys:String x:Key="Settings_DataManagement">💾 Data Management</sys:String>
+    <sys:String x:Key="Msg_ExportSuccess">Data exported successfully.</sys:String>
+    <sys:String x:Key="Msg_ImportSuccess">Data imported successfully.</sys:String>
+    <sys:String x:Key="Msg_ImportInvalidFile">The selected file is not a valid Anime Tracker data file.</sys:String>
+    <sys:String x:Key="Msg_ImportInstructions">Select a save file (animeData.json) to restore data.</sys:String>
+    <sys:String x:Key="ResetData_Title">Reset All Data</sys:String>
+    <sys:String x:Key="ResetData_Warning">Warning! This will delete ALL anime from plan and top, as well as all backup copies. Data recovery will be IMPOSSIBLE unless you have a separately saved file.</sys:String>
+    <sys:String x:Key="ResetData_RecommendBackup">We strongly recommend creating a backup first using the "Export Data" button.</sys:String>
+    <sys:String x:Key="ResetData_ConfirmButton">OK</sys:String>
+
+    <!-- Instructions -->
+    <sys:String x:Key="Instr_Welcome">Welcome to Anime Tracker!</sys:String>
+    <sys:String x:Key="Instr_Subtitle">Your personal companion in the world of anime</sys:String>
+    <sys:String x:Key="Instr_Intro">Keep a personal anime catalog, rate titles by 10 criteria and build your own top.</sys:String>
+    <sys:String x:Key="Instr_QuickStart_Title">Quick start</sys:String>
+    <sys:String x:Key="Instr_Step1_Title">Add</sys:String>
+    <sys:String x:Key="Instr_Step1_Text">Press “Add” on the Plan tab</sys:String>
+    <sys:String x:Key="Instr_Step2_Title">Watch</sys:String>
+    <sys:String x:Key="Instr_Step2_Text">Set the status to “Watching”</sys:String>
+    <sys:String x:Key="Instr_Step3_Title">Rate</sys:String>
+    <sys:String x:Key="Instr_Step3_Text">The “Watched” status opens rating</sys:String>
+    <sys:String x:Key="Instr_Step4_Title">Share</sys:String>
+    <sys:String x:Key="Instr_Step4_Text">Save your plan or top as an image</sys:String>
+    <sys:String x:Key="Instr_Plan_Title">Plan tab</sys:String>
+    <sys:String x:Key="Instr_Plan_1">➕ “Add” opens a form: title, genres, description, voice-over, seasons, movies, OVAs and ONAs.</sys:String>
+    <sys:String x:Key="Instr_Plan_2">🔄 Change the status right in the table: “Plan” → “Watching” → “Watched”. With the last status the anime moves to the Rating tab.</sys:String>
+    <sys:String x:Key="Instr_Plan_3">⭐ “Temp Rating” — rate the selected anime in advance or while watching. The scores carry over when you mark it “Watched”.</sys:String>
+    <sys:String x:Key="Instr_Plan_4">🎲 “Random” picks a random anime from your plan — you can narrow it down by genre.</sys:String>
+    <sys:String x:Key="Instr_Plan_5">✏️ “Edit” and “Delete” work with the selected row. Use the title search to find what you need.</sys:String>
+    <sys:String x:Key="Instr_Rating_Title">Rating tab</sys:String>
+    <sys:String x:Key="Instr_Rating_1">🎯 Every season and movie is rated by 10 criteria: from story and characters to sound and finale. The “Criteria” button explains what each score means. OVAs and ONAs are only listed as part of a title (they show up in the plan, top and statistics) but are not rated.</sys:String>
+    <sys:String x:Key="Instr_Rating_2">🎵 Openings and endings are rated separately. Their number is detected automatically, but you can change it with ➖ and ➕.</sys:String>
+    <sys:String x:Key="Instr_Rating_3">⚖️ If two anime end up with the same score, the app will ask which one is better.</sys:String>
+    <sys:String x:Key="Instr_Rating_4">↩️ “Cancel Rating” returns the anime to your plan with the “Watching” status.</sys:String>
+    <sys:String x:Key="Instr_Top_Title">Top tab</sys:String>
+    <sys:String x:Key="Instr_Top_1">🏆 Your personal ranking by final score, accurate to hundredths. The leaders are highlighted.</sys:String>
+    <sys:String x:Key="Instr_Top_2">🔁 “Re-evaluate” sends a title back to the Rating tab, “Edit” changes its info without losing scores, “Delete from Top” removes the entry.</sys:String>
+    <sys:String x:Key="Instr_Top_3">🔍 The title search works here too.</sys:String>
+    <sys:String x:Key="Instr_Share_Title">“Share” button</sys:String>
+    <sys:String x:Key="Instr_Share_1">🖼 Available on the Plan and Top tabs: creates a beautiful image with the logo and the list from the current table (search is taken into account).</sys:String>
+    <sys:String x:Key="Instr_Share_2">📚 If there are many anime, the list is automatically split into several images — nothing gets cut off.</sys:String>
+    <sys:String x:Key="Instr_Share_3">💾 The image uses your theme colors and the app language. You can save it as PNG or JPEG.</sys:String>
+    <sys:String x:Key="Instr_Stats_Title">Statistics tab</sys:String>
+    <sys:String x:Key="Instr_Stats_1">📈 Summary: how many anime are watched, planned and currently being watched, plus total time and episode count.</sys:String>
+    <sys:String x:Key="Instr_Stats_2">🍩 Charts show your favorite genres, top 10, trends by year, the longest and shortest titles, and recommendations. The data comes from the Top tab.</sys:String>
+    <sys:String x:Key="Instr_Settings_Title">Settings tab</sys:String>
+    <sys:String x:Key="Instr_Settings_1">🎨 Pick one of 9 themes and the interface language — Russian or English. Changes apply instantly.</sys:String>
+    <sys:String x:Key="Instr_Settings_2">🛟 Backups are created automatically when you save (at most once every 30 minutes). Up to 5 latest copies from the past week are kept; restore or delete them in “Manage backups”.</sys:String>
+    <sys:String x:Key="Instr_Settings_3">📤 Export and 📥 import move the animeData.json file — handy when switching to another computer.</sys:String>
+    <sys:String x:Key="Instr_Settings_4">⚠️ “Reset Data” permanently deletes your whole catalog. If unsure, export first.</sys:String>
+    <sys:String x:Key="Instr_Hotkeys_Title">Hotkeys</sys:String>
+    <sys:String x:Key="Instr_Hotkeys_1">Jump straight to the search box on the Plan and Top tabs.</sys:String>
+    <sys:String x:Key="Instr_Footer">Enjoy watching! 🍿</sys:String>
+
+    <!-- FAQ -->
+    <sys:String x:Key="FAQ_Title">Frequently Asked Questions</sys:String>
+    <sys:String x:Key="FAQ_Q1">How to add anime?</sys:String>
+    <sys:String x:Key="FAQ_A1">Click the "Add" button on the "Plan" tab, fill in the required fields (marked with *), and click "Add". If you immediately select "Watched" status, the anime will move to the "Rating" tab.</sys:String>
+    <sys:String x:Key="FAQ_Q2">Why are genres not displayed?</sys:String>
+    <sys:String x:Key="FAQ_A2">Make sure you have selected a main genre from the dropdown. Additional genres are optional.</sys:String>
+    <sys:String x:Key="FAQ_Q3">What if two anime have the same score?</sys:String>
+    <sys:String x:Key="FAQ_A3">When adding to the top, a selection window will open where you decide which anime to rank higher. If conflicts remain, the system will prompt you to resolve them at startup.</sys:String>
+    <sys:String x:Key="FAQ_Q4">How to restore data from a backup?</sys:String>
+    <sys:String x:Key="FAQ_A4">On the "Settings" tab, click "Manage backups", select the desired copy and click "Restore". You can also import a previously exported data file.</sys:String>
+    <sys:String x:Key="FAQ_Q5">How to completely erase all data?</sys:String>
+    <sys:String x:Key="FAQ_A5">On the "Settings" tab, in the "Data Management" section, click the red "Reset Data" button. Confirm the action in the popup window (you need to wait 5 seconds). It is strongly recommended to create a backup before resetting.</sys:String>
+    <sys:String x:Key="FAQ_Q6">Why does the "Top" tab lag slightly when first opened?</sys:String>
+    <sys:String x:Key="FAQ_A6">When you first switch to the "Top" tab, the app calculates statistics and finalizes score sorting. This is completely normal and takes only a fraction of a second. Subsequent openings will be instant.</sys:String>
+    <sys:String x:Key="FAQ_Q7">How to rate anime if each season has a different number of openings/endings?</sys:String>
+    <sys:String x:Key="FAQ_A7">The system automatically determines the number of openings/endings based on season length (≤12 ep – 1, 13–24 ep – 2, 25–36 ep – 3, etc.). You can manually add or remove sliders using the «+» and «−» buttons next to each list. If the anime has a non‑standard amount (e.g., a different ending in every episode), we recommend calculating the average of all themes and entering it into a single slider.</sys:String>
+    <sys:String x:Key="FAQ_Contact">Contact</sys:String>
+    <sys:String x:Key="FAQ_ContactText">For questions and suggestions:</sys:String>
+    <sys:String x:Key="FAQ_LicenseHeader">License Agreement (EULA)</sys:String>
+
+    <!-- Genres -->
+    <sys:String x:Key="Genre_Angels">Angels</sys:String>
+    <sys:String x:Key="Genre_Dystopia">Dystopia</sys:String>
+    <sys:String x:Key="Genre_Madness">Madness</sys:String>
+    <sys:String x:Key="Genre_Bishounen">Bishounen</sys:String>
+    <sys:String x:Key="Genre_Deities">Deities</sys:String>
+    <sys:String x:Key="Genre_MartialArts">Martial Arts</sys:String>
+    <sys:String x:Key="Genre_Vampire">Vampire</sys:String>
+    <sys:String x:Key="Genre_VirtualReality">Virtual Reality</sys:String>
+    <sys:String x:Key="Genre_Military">Military</sys:String>
+    <sys:String x:Key="Genre_Thieves">Thieves</sys:String>
+    <sys:String x:Key="Genre_Harem">Harem</sys:String>
+    <sys:String x:Key="Genre_Racing">Racing</sys:String>
+    <sys:String x:Key="Genre_Gourmet">Gourmet</sys:String>
+    <sys:String x:Key="Genre_Demons">Demons</sys:String>
+    <sys:String x:Key="Genre_Detective">Detective</sys:String>
+    <sys:String x:Key="Genre_Josei">Josei</sys:String>
+    <sys:String x:Key="Genre_Dragons">Dragons</sys:String>
+    <sys:String x:Key="Genre_Drama">Drama</sys:String>
+    <sys:String x:Key="Genre_Games">Games</sys:String>
+    <sys:String x:Key="Genre_Aliens">Aliens</sys:String>
+    <sys:String x:Key="Genre_Isekai">Isekai</sys:String>
+    <sys:String x:Key="Genre_Historical">Historical</sys:String>
+    <sys:String x:Key="Genre_Cyberpunk">Cyberpunk</sys:String>
+    <sys:String x:Key="Genre_Kodomo">Kodomo</sys:String>
+    <sys:String x:Key="Genre_Comedy">Comedy</sys:String>
+    <sys:String x:Key="Genre_Space">Space</sys:String>
+    <sys:String x:Key="Genre_Lolicon">Lolicon</sys:String>
+    <sys:String x:Key="Genre_LoveTriangle">Love Triangle</sys:String>
+    <sys:String x:Key="Genre_Magic">Magic</sys:String>
+    <sys:String x:Key="Genre_MahouShoujo">Mahou Shoujo</sys:String>
+    <sys:String x:Key="Genre_Mafia">Mafia</sys:String>
+    <sys:String x:Key="Genre_Medical">Medical</sys:String>
+    <sys:String x:Key="Genre_Mecha">Mecha</sys:String>
+    <sys:String x:Key="Genre_Mystery">Mystery</sys:String>
+    <sys:String x:Key="Genre_Music">Music</sys:String>
+    <sys:String x:Key="Genre_NonlinearPlot">Nonlinear Plot</sys:String>
+    <sys:String x:Key="Genre_Ninja">Ninja</sys:String>
+    <sys:String x:Key="Genre_ParallelWorld">Parallel World</sys:String>
+    <sys:String x:Key="Genre_Parody">Parody</sys:String>
+    <sys:String x:Key="Genre_Gunfights">Gunfights</sys:String>
+    <sys:String x:Key="Genre_SliceOfLife">Slice of Life</sys:String>
+    <sys:String x:Key="Genre_Police">Police</sys:String>
+    <sys:String x:Key="Genre_PostApocalyptic">Post-Apocalyptic</sys:String>
+    <sys:String x:Key="Genre_Adventure">Adventure</sys:String>
+    <sys:String x:Key="Genre_ProxyBattles">Proxy Battles</sys:String>
+    <sys:String x:Key="Genre_PsychologicalThriller">Psychological Thriller</sys:String>
+    <sys:String x:Key="Genre_Psychological">Psychological</sys:String>
+    <sys:String x:Key="Genre_Romance">Romance</sys:String>
+    <sys:String x:Key="Genre_Samurai">Samurai</sys:String>
+    <sys:String x:Key="Genre_Supernatural">Supernatural</sys:String>
+    <sys:String x:Key="Genre_Shojo">Shojo</sys:String>
+    <sys:String x:Key="Genre_ShoujoAi">Shoujo Ai</sys:String>
+    <sys:String x:Key="Genre_Sports">Sports</sys:String>
+    <sys:String x:Key="Genre_Sport">Sport</sys:String>
+    <sys:String x:Key="Genre_SwordFights">Sword Fights</sys:String>
+    <sys:String x:Key="Genre_Steampunk">Steampunk</sys:String>
+    <sys:String x:Key="Genre_Superpowers">Superpowers</sys:String>
+    <sys:String x:Key="Genre_Seinen">Seinen</sys:String>
+    <sys:String x:Key="Genre_Shonen">Shonen</sys:String>
+    <sys:String x:Key="Genre_DarkFantasy">Dark Fantasy</sys:String>
+    <sys:String x:Key="Genre_Tragedy">Tragedy</sys:String>
+    <sys:String x:Key="Genre_Thriller">Thriller</sys:String>
+    <sys:String x:Key="Genre_Assassins">Assassins</sys:String>
+    <sys:String x:Key="Genre_Horror">Horror</sys:String>
+    <sys:String x:Key="Genre_SciFi">Sci-Fi</sys:String>
+    <sys:String x:Key="Genre_Fantasy">Fantasy</sys:String>
+    <sys:String x:Key="Genre_School">School</sys:String>
+    <sys:String x:Key="Genre_Action">Action</sys:String>
+    <sys:String x:Key="Genre_Elves">Elves</sys:String>
+    <sys:String x:Key="Genre_Erotica">Erotica</sys:String>
+    <sys:String x:Key="Genre_Ecchi">Ecchi</sys:String>
+    <sys:String x:Key="Genre_Yuri">Yuri</sys:String>
+    <sys:String x:Key="Genre_Yaoi">Yaoi</sys:String>
+
+    <!-- Themes -->
+    <sys:String x:Key="Theme_Default">Default</sys:String>
+    <sys:String x:Key="Theme_NightEmerald">Night Emerald</sys:String>
+    <sys:String x:Key="Theme_SunsetBlaze">Sunset Blaze</sys:String>
+    <sys:String x:Key="Theme_IcySapphire">Icy Sapphire</sys:String>
+    <sys:String x:Key="Theme_PinkDawn">Pink Dawn</sys:String>
+    <sys:String x:Key="Theme_CarbonCharcoal">Carbon Charcoal</sys:String>
+    <sys:String x:Key="Theme_AutumnAmber">Autumn Amber</sys:String>
+    <sys:String x:Key="Theme_LavenderDream">Lavender Dream</sys:String>
+    <sys:String x:Key="Theme_MidnightGalaxy">Midnight Galaxy</sys:String>
+
+    <!-- Page titles -->
+    <sys:String x:Key="Plan_PageTitle">📋 Your Plan</sys:String>
+    <sys:String x:Key="Top_PageTitle">🏆 Viewing Leaders</sys:String>
+
+    <!-- Statistics titles -->
+    <sys:String x:Key="Stats_DistributionTitle">Status Distribution</sys:String>
+    <sys:String x:Key="Stats_Top5GenresTitle">Top 5 Genres</sys:String>
+    <sys:String x:Key="Stats_TopByYearTitle">📅 Top Score by Year</sys:String>
+
+    <!-- Search -->
+    <sys:String x:Key="Search_Placeholder">🔍  Search anime...</sys:String>
+
+    <!-- Rating -->
+    <sys:String x:Key="Rating_NoParts">No parts to evaluate</sys:String>
+
+    <!-- Misc -->
+    <sys:String x:Key="Rating_Evaluating">Evaluating:</sys:String>
+    <sys:String x:Key="Rating_VoiceOver">Voice over:</sys:String>
+    <sys:String x:Key="Msg_Conflict">Both anime have the same score. Choose which one is higher:</sys:String>
+    <sys:String x:Key="Msg_SelectHigher">▲ Select this anime higher</sys:String>
+    <sys:String x:Key="Plan_TodaysChoice">Today's choice</sys:String>
+    <sys:String x:Key="Plan_PressRandom">Press Random</sys:String>
+    <sys:String x:Key="Backup_Title">Manage backups</sys:String>
+    <sys:String x:Key="Backup_Available">Available backups</sys:String>
+    <sys:String x:Key="Backup_Restore">Restore</sys:String>
+    <sys:String x:Key="Backup_Delete">Delete</sys:String>
+    <sys:String x:Key="Backup_Close">Close</sys:String>
+    <sys:String x:Key="Backup_Size">Size:</sys:String>
+    <sys:String x:Key="Backup_CreateFailed">Failed to create a backup: {0}</sys:String>
+    <sys:String x:Key="Backup_NotFound">Backup file not found.</sys:String>
+    <sys:String x:Key="Backup_RestoreFailed">Failed to restore data: {0}</sys:String>
+    <sys:String x:Key="AddAnime_Title">Add Anime</sys:String>
+    <sys:String x:Key="Conflict_Title">Score Conflict</sys:String>
+    <sys:String x:Key="ToolTip_ExactScore">Exact score:</sys:String>
+    <sys:String x:Key="CriteriaHelp_Title">Evaluation Criteria</sys:String>
+    <sys:String x:Key="CriteriaHelp_Header">Evaluation Criteria</sys:String>
+    <sys:String x:Key="Stats_Hint">💡 Hover over the title to see details</sys:String>
+
+    <!-- Temp Rating Window -->
+    <sys:String x:Key="TempRating_Title">Temporary Rating</sys:String>
+    <sys:String x:Key="TempRating_Info">⭐ This is the temporary rating window.&#x0a;Scores set here do not affect the final ranking and can be changed at any time. When you change the anime status to "Watched", these scores will be transferred to the "Rating" tab.</sys:String>
+
+    <!-- EditAnimeWindow / AddAnimeWindow -->
+    <sys:String x:Key="EditAnime_Title">Edit Anime</sys:String>
+    <sys:String x:Key="EditAnime_BasicInfo">📝 Basic Information</sys:String>
+    <sys:String x:Key="EditAnime_AdditionalGenres">Additional genres</sys:String>
+    <sys:String x:Key="EditAnime_AddGenreButton">➕ Add genre</sys:String>
+    <sys:String x:Key="EditAnime_AdditionalGenrePrefix">Add. genre</sys:String>
+    <sys:String x:Key="EditAnime_EpisodesStatus">🎬 Episodes &amp; Status</sys:String>
+    <sys:String x:Key="EditAnime_DescriptionOnly">📄 Description</sys:String>
+    <sys:String x:Key="EditAnime_Details">📋 Seasons/Movies/OVA/ONA Details</sys:String>
+    <sys:String x:Key="EditAnime_DescriptionAndVoice">📄 Description and voice over</sys:String>
+
+    <sys:String x:Key="AddAnime_BasicInfo">📝 Basic Information</sys:String>
+    <sys:String x:Key="AddAnime_AdditionalGenres">Additional genres</sys:String>
+    <sys:String x:Key="AddAnime_AddGenreButton">➕ Add genre</sys:String>
+    <sys:String x:Key="AddAnime_AdditionalGenrePrefix">Add. genre</sys:String>
+    <sys:String x:Key="AddAnime_EpisodesStatus">🎬 Episodes &amp; Status</sys:String>
+    <sys:String x:Key="AddAnime_DescriptionOnly">📄 Description</sys:String>
+    <sys:String x:Key="AddAnime_Details">📋 Seasons/Movies/OVA/ONA Details</sys:String>
+    <sys:String x:Key="AddAnime_DescriptionAndVoice">📄 Description and voice over</sys:String>
+
+    <!-- Messages -->
+    <sys:String x:Key="Msg_RequiredFields">Fill in all required fields (marked with a star).</sys:String>
+    <sys:String x:Key="Msg_AddAtLeastOne">Add at least one season, movie, OVA or ONA.</sys:String>
+    <sys:String x:Key="Msg_CorrectYears">Please specify correct years and episode counts for all seasons/movies/OVA/ONA.</sys:String>
+    <sys:String x:Key="Msg_DataRestored">Data restored successfully.</sys:String>
+    <sys:String x:Key="Msg_DataResetSuccess">All data has been reset.</sys:String>
+    <sys:String x:Key="Msg_DeleteAnimeConfirmation">Delete anime '{0}' from your top?</sys:String>
+    <sys:String x:Key="Msg_DeletePlanAnimeConfirmation">Delete anime '{0}' from your plan?</sys:String>
+    <sys:String x:Key="Msg_ConfirmDeleteTitle">Confirmation</sys:String>
+    <sys:String x:Key="Msg_DataLoadError">Data loading error: {0}</sys:String>
+    <sys:String x:Key="Msg_ErrorTitle">Error</sys:String>
+
+    <!-- About page -->
+    <sys:String x:Key="About_Title">About</sys:String>
+    <sys:String x:Key="About_AppDescription">Anime Tracker is a desktop application for maintaining a personal anime catalog with 10-criteria rating and building your own top list.</sys:String>
+    <sys:String x:Key="About_AppStory">It all started with a friend's idea to rate watched anime. We went from notepads to Excel with macros, but the functionality wasn't enough. So I decided to create a full-fledged application that combines flexible rating, convenient statistics, and a beautiful interface.</sys:String>
+    <sys:String x:Key="About_Developer">Developer</sys:String>
+    <sys:String x:Key="About_DeveloperName">ThePhantomRU</sys:String>
+    <sys:String x:Key="About_GitHub">GitHub</sys:String>
+    <sys:String x:Key="About_GitHubLink">https://github.com/ThePhantomRU</sys:String>
+
+    <!-- Tooltips for tabs -->
+    <sys:String x:Key="ToolTip_PlanTab">List of planned anime</sys:String>
+    <sys:String x:Key="ToolTip_RatingTab">Rate anime</sys:String>
+    <sys:String x:Key="ToolTip_TopTab">Your personal ranking</sys:String>
+    <sys:String x:Key="ToolTip_StatsTab">Viewing statistics</sys:String>
+    <sys:String x:Key="ToolTip_InstructionsTab">User guide</sys:String>
+    <sys:String x:Key="ToolTip_SettingsTab">Application settings</sys:String>
+    <sys:String x:Key="ToolTip_AboutTab">About the program</sys:String>
+</ResourceDictionary>

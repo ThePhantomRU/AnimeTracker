@@ -1,0 +1,41 @@
+END USER LICENSE AGREEMENT (EULA) FOR THE "ANIME TRACKER" SOFTWARE
+
+PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE INSTALLING OR USING THE SOFTWARE.
+
+1. GENERAL PROVISIONS
+This License Agreement (hereinafter referred to as the "Agreement") is a legal document entered into between you (an individual or legal entity, hereinafter referred to as the "User") and [Your Name] (hereinafter referred to as the "Copyright Holder"), and governs the use of the "Anime Tracker" Software (hereinafter referred to as the "Software").
+
+By installing, copying, or otherwise using the Software, you express your full and unconditional agreement with all the terms of this Agreement. If you do not accept the terms of this Agreement in full, you may not use the Software.
+
+2. GRANT OF LICENSE
+2.1. The Copyright Holder grants the User a non-exclusive, non-transferable right to use the Software under a simple (non-exclusive) license.
+2.2. The User may use the Software on an unlimited number of personal computers, provided that such use is carried out by the User personally for non-commercial purposes.
+2.3. This Agreement does not grant the User any rights to the source code of the Software, nor to modify, decompile, disassemble, or otherwise convert the Software into source code.
+
+3. LIMITATIONS
+The User has no right to:
+– distribute, transfer to third parties, rent, lease, or publish the Software or its copies;
+– remove, alter, or obscure copyright notices, trademarks, or other notices of the Copyright Holder.
+
+4. COPYRIGHT
+4.1. The Software is subject to copyright and is protected by Russian Federation law and international treaties.
+4.2. All rights to the Software, including the exclusive right to use it, belong to the Copyright Holder.
+4.3. Copyright in the Software is non-transferable and is retained by the Copyright Holder in full.
+4.4. Anime titles, descriptions, images, and other related intellectual property are the property of their respective owners. Anime Tracker software does not claim any rights to these objects and uses them for informational purposes only.
+
+5. LIABILITY
+5.1. The Software is provided "as is." The Copyright Holder shall not be liable for any direct or indirect damages arising from the use or inability to use the Software, even if the Copyright Holder has been advised of the possibility of such damages.
+5.2. The Copyright Holder does not guarantee that the Software will operate without errors or interruptions and is not obligated to provide technical support unless otherwise specified in a separate agreement.
+
+6. TERM AND TERMINATION
+6.1. This Agreement is valid for the entire term of use of the Software.
+6.2. The User has the right to terminate the Agreement at any time by deleting the Software from all of their devices.
+6.3. The Copyright Holder has the right to unilaterally terminate the Agreement if the User breaches its terms. Upon termination, the User is obligated to stop using the Software and delete all copies of it.
+
+7. OTHER TERMS
+7.1. This Agreement is governed by the laws of the Russian Federation.
+7.2. If any provision of this Agreement is held invalid, the remaining provisions will remain in full force and effect.
+
+COPYRIGHT HOLDER CONTACT INFORMATION:
+Email: arseniy.kushavin@gmail.com
+Telegram: @ThePhantom_RU

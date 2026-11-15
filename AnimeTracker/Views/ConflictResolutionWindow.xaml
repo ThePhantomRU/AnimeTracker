@@ -1,0 +1,82 @@
+﻿<Window x:Class="AnimeTracker.ConflictResolutionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:AnimeTracker.ViewModels"
+        Title="{DynamicResource Conflict_Title}" Height="380" Width="650"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        WindowStartupLocation="CenterOwner" ResizeMode="CanResize">
+    <Border Background="{StaticResource WindowBackground}" CornerRadius="10"
+            BorderBrush="{StaticResource BorderBrush}" BorderThickness="1">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Background="{StaticResource AccentBrush}" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="{DynamicResource Conflict_Title}" Foreground="White" FontWeight="SemiBold" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <StackPanel Grid.Column="1" Orientation="Horizontal">
+                    <Button Content="✕" Style="{StaticResource WindowButtonStyle}" Click="Cancel_Click"/>
+                </StackPanel>
+            </Grid>
+
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <Grid Margin="20">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="{DynamicResource Msg_Conflict}" Foreground="White" FontSize="16" TextWrapping="Wrap" Margin="0,0,0,15"/>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Background="{StaticResource PanelBackground}" CornerRadius="8" Padding="10" Margin="0,0,5,0">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Anime1.Title}" FontSize="18" FontWeight="Bold" Foreground="White" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding Anime1DisplayGenre, Mode=OneWay}" Foreground="{StaticResource AccentLightBrush}" Margin="0,5"/>
+                                <TextBlock Foreground="LightGray">
+                                    <Run Text="{DynamicResource Label_Year}"/><Run Text=": "/><Run Text="{Binding Anime1.YearsDisplay, Mode=OneWay}"/>
+                                </TextBlock>
+                                <TextBlock Foreground="White" FontSize="16" Margin="0,10">
+                                    <Run Text="{DynamicResource Label_Score}"/><Run Text=": "/><Run Text="{Binding DisplayScore1, Mode=OneWay, StringFormat={}{0:F2}}"/>
+                                </TextBlock>
+                                <Button Content="{DynamicResource Msg_SelectHigher}" Click="SelectLeft_Click" Height="35" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+
+                        <TextBlock Text="VS" Grid.Column="1" Foreground="White" FontSize="24" FontWeight="Bold" VerticalAlignment="Center" Margin="10,0"/>
+
+                        <Border Background="{StaticResource PanelBackground}" CornerRadius="8" Padding="10" Margin="5,0,0,0" Grid.Column="2">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Anime2.Title}" FontSize="18" FontWeight="Bold" Foreground="White" TextWrapping="Wrap"/>
+                                <TextBlock Text="{Binding Anime2DisplayGenre, Mode=OneWay}" Foreground="{StaticResource AccentLightBrush}" Margin="0,5"/>
+                                <TextBlock Foreground="LightGray">
+                                    <Run Text="{DynamicResource Label_Year}"/><Run Text=": "/><Run Text="{Binding Anime2.YearsDisplay, Mode=OneWay}"/>
+                                </TextBlock>
+                                <TextBlock Foreground="White" FontSize="16" Margin="0,10">
+                                    <Run Text="{DynamicResource Label_Score}"/><Run Text=": "/><Run Text="{Binding DisplayScore2, Mode=OneWay, StringFormat={}{0:F2}}"/>
+                                </TextBlock>
+                                <Button Content="{DynamicResource Msg_SelectHigher}" Click="SelectRight_Click" Height="35" Margin="0,10,0,0"/>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+                        <Button Content="{DynamicResource Button_Cancel}" Width="100" Click="Cancel_Click" IsCancel="True"/>
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Border>
+</Window>

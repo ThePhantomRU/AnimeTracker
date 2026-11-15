@@ -1,0 +1,15 @@
+﻿<Application x:Class="AnimeTracker.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:AnimeTracker"
+             StartupUri="Views/SplashScreenWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Базовая тема по умолчанию (будет заменена динамически при выборе другой темы) -->
+                <ResourceDictionary Source="Themes/DefaultTheme.xaml"/>
+                <!-- Строки локализации загружаются динамически в LocalizationManager -->
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
